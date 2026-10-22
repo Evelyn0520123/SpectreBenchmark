@@ -1,0 +1,42 @@
+emu compiled at Jul 13 2026, 16:51:03
+Usage: /nfs/home/leizhenyu/opt/verified_poc/xiangshan-v3/spectre-v1-poc-kmhv3/runtime/emu/emu [OPTION...]
+
+  -s, --seed=NUM             use this seed
+  -C, --max-cycles=NUM       execute at most NUM cycles
+  -I, --max-instr=NUM        execute at most NUM instructions
+  -W, --warmup-instr=NUM     the number of warmup instructions
+  -D, --stat-cycles=NUM      the interval cycles of dumping statistics
+  -i, --image=FILE           run with this image file
+  -r, --gcpt-restore=FILE    overwrite gcptrestore img with this image file
+  -b, --log-begin=NUM        display log from NUM th cycle
+  -e, --log-end=NUM          stop display log at NUM th cycle
+  -T, --track-instr=ADDR     track refill action concerning ADDR
+  -X, --fork-interval=NUM    LightSSS snapshot interval (in seconds)
+      --overwrite-nbytes=N   set valid bytes, but less than 0xf00, default: 0xe00
+      --overwrite-auto       overwrite size is automatically set of the new gcpt
+      --force-dump-result    force dump performance counter result in the end
+      --load-snapshot=PATH   load snapshot from PATH
+      --no-snapshot          disable saving snapshots
+      --dump-wave            dump waveform when log is enabled
+      --dump-wave-full       dump full waveform when log is enabled
+      --dump-ref-trace       dump REF trace when log is enabled
+      --dump-commit-trace    dump commit trace when log is enabled
+      --dump-db              enable database dump
+      --dump-select-db       select database's table to dump
+  -F, --flash                the flash bin file for simulation
+      --sim-run-ahead        let a fork of simulator run ahead of commit for perf analysis
+      --wave-path=FILE       dump waveform to a specified PATH
+      --ram-size=SIZE        simulation memory size, for example 8GB / 128MB
+      --enable-fork          enable folking child processes to debug
+      --no-diff              disable differential testing
+      --diff=PATH            set the path of REF for differential testing
+      --enable-jtag          enable remote bitbang server
+      --remote-jtag-port     specify remote bitbang port
+      --load-difftrace=NAME  load from trace NAME
+      --dump-difftrace=NAME  dump to trace NAME
+      --iotrace-name=NAME    load from/dump to iotrace NAME
+      --dump-footprints=NAME dump memory access footprints to NAME
+      --as-footprints        load the image as memory access footprints
+      --dump-linearized=NAME dump the linearized footprints to NAME
+  -h, --help                 print program help info
+

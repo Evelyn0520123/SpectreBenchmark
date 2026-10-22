@@ -1,0 +1,10 @@
+schema_version=POC-RP-1.0
+profile=bare
+processor=kmhv3
+vm_mode=bare
+emu_relpath=runtime/kmhv3-emu/emu
+emu_sha256=7886cdf6081378bfcd84fb9397cd192f19c499ca607fb8b403f91b47c5c88bd1
+emu_build_id=761c266eee6ae2e7dc5ab7d930081e63a92a6b68
+constantin_mode=required
+constantin_relpath=runtime/noop-home/build/constantin.txt
+source_of_runtime=materialized profile copy; source_absolute_path is recorded only in profile manifest provenance
